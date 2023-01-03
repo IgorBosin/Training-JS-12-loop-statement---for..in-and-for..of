@@ -1,0 +1,14 @@
+// Training JS #12: loop statement --for..in and for..of
+
+function giveMeFive(obj) {
+    let obj2 = []
+    for(const index in obj) {
+        if (index.length == 5) 
+                obj2.push(index);
+        if (obj[index].length == 5) 
+                obj2.push(obj[index]);
+    }
+
+    return obj2
+}
+    console.log(giveMeFive({Pears:"thans",apple:"sweet"}))
