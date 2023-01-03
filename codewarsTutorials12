@@ -12,3 +12,19 @@ function giveMeFive(obj) {
     return obj2
 }
     console.log(giveMeFive({Pears:"thans",apple:"sweet"}))
+
+
+
+giveMeFive = obj => 
+  Object              
+    .entries(obj)
+    .join(',')
+    .split(',')         
+    .filter(i => i.length == 5);
+
+console.log( giveMeFive({Pears:"thans",apple:"sweet"}) )
+//[ 'Pears', 'thans', 'apple', 'sweet' ]
+здесь ключ.значение, ключ, значение
+
+// Converting object to => string to => to array and filter it
+конвертация объекта в строку =>сроку в массив=>фильтр массива
